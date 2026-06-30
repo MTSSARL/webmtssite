@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html id="html-root" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MTS - Manufacturing System Technology: electrical equipment, electronic assemblies, special machines, robotic integration, maintenance and industrial equipment distribution." data-i18n="meta.desc">
+
+    <title data-i18n="meta.title">MTS — Manufacturing Technology System | Industrial Automation Morocco</title>
+
+    <link rel="shortcut icon" href="assets/mts/images/fav.png" type="image/x-icon">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/validthemes-icon.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/validnavs.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/unit-test.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/mts/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .banner-style-one-area {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-video-bg {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .hero-video-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.55);
+            z-index: 1;
+        }
+        .banner-style-one-area .container {
+            position: relative;
+            z-index: 2;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .lang-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover,
+        .lang-btn.active {
+            background: #fff;
+            color: #1F1F25;
+            border-color: #fff;
+        }
+        .single-brand-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            padding: 15px;
+        }
+        .single-brand-logo img {
+            max-width: 140px;
+            max-height: 60px;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+            filter: grayscale(1);
+        }
+        .single-brand-logo img:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+        .partner-logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+        }
+        .partner-logo-item img {
+            max-width: 110px;
+            max-height: 45px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            filter: grayscale(1);
+        }
+        .partner-logo-item img:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+        .hero-clients-section {
+            position: relative;
+            z-index: 2;
+            padding: 50px 0 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
+        }
+        .hero-clients-section .hero-clients-title {
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .hero-clients-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px 50px;
+        }
+        .hero-clients-grid img {
+            max-height: 35px;
+            opacity: 0.5;
+            filter: grayscale(1) brightness(2);
+            transition: all 0.3s;
+        }
+        .hero-clients-grid img:hover {
+            opacity: 1;
+            filter: grayscale(0) brightness(1);
+        }
+    </style>
+
+</head>
+
+<body class="smooth-scroll-yes bg-dark">
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <div id="preloader">
+        <div class="robok-loader-inner">
+           <div class="robok-loader">
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+              <span class="robok-loader-item"></span>
+           </div>
+        </div>
+     </div>
+
+    <header>
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs white navbar-fixed no-background">
+            <div class="container-full d-flex justify-content-between align-items-center">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/mts/images/logo/MTS logo.png" class="logo logo-display" alt="MTS Logo" style="height:50px;width:auto;">
+                        <img src="assets/mts/images/logo/MTS logo.png" class="logo logo-scrolled" alt="MTS Logo" style="height:50px;width:auto;">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <img src="assets/mts/images/logo/MTS logo.png" alt="MTS Logo" style="height:50px;width:auto;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="index.html"><span data-i18n="nav.home">Home</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-i18n="nav.about">About</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-us.html"><span data-i18n="nav.about_mts">About MTS</span></a></li>
+                                <li><a href="team.html"><span data-i18n="nav.our_team">Our Team</span></a></li>
+                                <li><a href="about-us.html"><span data-i18n="nav.why_choose_us">Why Choose Us</span></a></li>
+                                <li><a href="about-us.html"><span data-i18n="nav.our_partners">Our Partners</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-i18n="nav.services">Services</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services-details.html"><span data-i18n="nav.electrical_equipment">Electrical Engineering</span></a></li>
+                                <li><a href="services-details.html"><span data-i18n="nav.electronic_assemblies">Machine Vision</span></a></li>
+                                <li><a href="services-details.html"><span data-i18n="nav.special_machines_robotics">Special Machines &amp; Robotics</span></a></li>
+                                <li><a href="services-details.html"><span data-i18n="nav.maintenance_repair">Maintenance &amp; Support</span></a></li>
+                                <li><a href="services-details.html"><span data-i18n="nav.equipment_distribution">Conveyor Systems</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html"><span data-i18n="nav.contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="attr-right">
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="button">
+                                <div class="lang-switcher">
+                                    <button class="lang-btn" data-lang="en" onclick="MTS.switchLang('en')">EN</button>
+                                    <button class="lang-btn" data-lang="fr" onclick="MTS.switchLang('fr')">FR</button>
+                                </div>
+                            </li>
+                            <li class="button">
+                                <a class="btn btn-style-one btn-border-light" href="contact-us.html"><span data-i18n="nav.contact_us">Contact Us</span> <i class="fas fa-arrow-right"></i></a>
+                            </li>
+                            <li class="side-menu">
+                                <a href="#">
+                                    <span class="bar-1"></span>
+                                    <span class="bar-2"></span>
+                                    <span class="bar-3"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="side">
+                    <a href="#" class="close-side"><i class="fas fa-times"></i></a>
+                    <div class="widget">
+                        <div class="logo">
+                            <img src="assets/mts/images/logo/MTS logo.png" alt="MTS Logo" style="height:50px;width:auto;">
+                        </div>
+                        <p data-i18n="sidebar.about_text">Special machines, robotics, machine vision, conveyors, and electrical engineering for automotive and manufacturing.</p>
+                    </div>
+                    <div class="widget address">
+                        <div>
+                            <ul>
+                                <li>
+                                    <div class="content">
+                                        <p data-i18n="sidebar.address_label">Address</p>
+                                        <strong>Z.A.E Bni Ouassine, Lot 58<br>Tanger, Morocco</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <p data-i18n="sidebar.email_label">Email</p>
+                                        <strong>contact@multitechniques-services.ma</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content">
+                                        <p data-i18n="sidebar.phone_label">Contact</p>
+                                        <strong>+212 610 764 921</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget social">
+                        <ul class="link">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay-screen"></div>
+        </nav>
+    </header>
+
+    <div id="smooth-content">
+
+        <!-- Banner -->
+        <div class="banner-style-one-area text-center default-padding bg-theme text-light bg-cover">
+            <video class="hero-video-bg" autoplay muted loop playsinline poster="assets/mts/images/banner/fallback.jpg">
+                <source src="assets/mts/videos/insperations.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-xl-8 offset-xl-2">
+                        <div class="banner-one-content fade-up-anim">
+                            <h4 data-i18n="hero.pre_title">Industrial Automation Integrator — Morocco</h4>
+                            <h2 data-i18n="hero.title" class="rts-text-anime-style-1"><span>Engineering the Future of Manufacturing</span></h2>
+                            <div class="content">
+                                <p data-i18n="hero.desc">MTS delivers turnkey industrial automation solutions — from special machines and robotic cells to machine vision and conveyor systems. Based in Tanger, serving tier-1 automotive leaders across Morocco and internationally.</p>
+                                <div class="button mt-30">
+                                    <a href="about-us.html" class="btn btn-style-one light" data-i18n="hero.learn_more">Discover Our Expertise <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-clients-section">
+                <div class="hero-clients-title" data-i18n="hero.clients_title">— Trusted by Industry Leaders —</div>
+                <div class="container">
+                    <div class="hero-clients-grid">
+                        <img src="assets/mts/images/client-logos/marelli.svg" alt="Marelli">
+                        <img src="assets/mts/images/client-logos/aptiv.svg" alt="APTIV">
+                        <img src="assets/mts/images/client-logos/te-connectivity.svg" alt="TE Connectivity">
+                        <img src="assets/mts/images/client-logos/opmobility.svg" alt="OPmobility">
+                        <img src="assets/mts/images/client-logos/sogefi.svg" alt="SOGEFI">
+                        <img src="assets/mts/images/client-logos/eci.svg" alt="ECI">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="about-style-one-area default-padding-top blurry-shape-top-full">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="about-style-one-info bg-gray fade-up-anim" style="background-image: url(assets/img/shape/3.png);">
+                            <h2 class="fixed-text">MTS</h2>
+                            <h4 class="sub-title" data-i18n="index.about.pre">About MTS</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.about.title">Your Industrial Automation Partner in Morocco</h2>
+                            <p data-i18n="index.about.desc1">MTS — Manufacturing Technology System is a Moroccan industrial automation integrator based in Tanger. We design, build, and commission turnkey solutions for manufacturing environments: special machines, robotic workcells, machine vision systems, conveyors, and industrial electrical engineering.</p>
+                            <div class="quote-and-review-area mt-30">
+                                <p style="font-style:italic;font-size:16px;" data-i18n="index.about.quote"><em>L'Innovation pour votre Productivité — Innovation for your Productivity</em></p>
+                                <div class="fun-fact mt-20">
+                                    <div class="js-counter" data-i18n="index.about.employees_num">50+</div>
+                                    <span data-i18n="index.about.employees_text">Satisfaction clients</span>
+                                </div>
+                            </div>
+                            <div class="text-end mt-30">
+                                <a href="about-us.html" class="btn btn-style-one btn-dark" data-i18n="index.about.learn_more">Learn More About MTS <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card-style-one-item fade-up-anim bg-gradient text-light">
+                            <img src="assets/mts/images/case/mts-robotic-arm.jpg" alt="MTS industrial solutions">
+                            <div class="info">
+                                <h3 data-i18n="index.about.card_title">Industrial Automation Expertise</h3>
+                                <p data-i18n="index.about.card_desc">From special machines to robotic integration, we deliver comprehensive automation solutions for manufacturing.</p>
+                                <div class="text-end mt-80">
+                                    <a href="services.html" class="btn btn-style-one border-light">Explore More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-style-one-two fade-up-anim mt-30">
+                            <h4 data-i18n="index.about.experience_title">Years of Experience</h4>
+                            <div class="bottom">
+                                <img src="assets/mts/images/case/mts-assembly-line.jpg" alt="MTS">
+                                <div class="fun-fact">
+                                    <div class="js-counter">10+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="services-style-one-area default-padding blurry-shape-half-right-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4 class="sub-title" data-i18n="index.services.pre">Our Expertise</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.services.title">Comprehensive Industrial Automation Solutions</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="service-style-one-items fade-up-anim">
+                    <div class="row gutter-zero">
+                        <div class="col-lg-4 col-md-6 service-one-tags" style="background-image: url(assets/img/shape/banner-7.jpg);">
+                            <div class="curve-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                                    <text><textPath href="#textPath" data-i18n="index.services.curve_text">Automation & industrial integration</textPath></text>
+                                </svg>
+                                <img src="assets/img/illustration/2.png" alt="MTS">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 service-style-one-single">
+                            <div class="service-style-one-item">
+                                <div class="icon">
+                                    <img src="assets/img/icon/2-white.png" alt="Special Machines">
+                                </div>
+                                <h4><a href="services-details.html" data-i18n="index.services.card1_title">Special Machines</a></h4>
+                                <p data-i18n="index.services.card1_desc">Design, manufacturing and integration of custom special machines for automated assembly, testing, and production processes across automotive and industrial sectors.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 service-style-one-single">
+                            <div class="service-style-one-item">
+                                <div class="icon">
+                                    <img src="assets/img/icon/3-white.png" alt="Machine Vision">
+                                </div>
+                                <h4><a href="services-details.html" data-i18n="index.services.card2_title">Machine Vision</a></h4>
+                                <p data-i18n="index.services.card2_desc">Defect detection, dimensional control, barcode reading, deep learning-based intelligent inspection solutions for quality assurance in manufacturing.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 service-style-one-single">
+                            <div class="service-style-one-item">
+                                <div class="icon">
+                                    <img src="assets/img/icon/1-white.png" alt="Robotics">
+                                </div>
+                                <h4><a href="services-details.html" data-i18n="index.services.card3_title">Robotics</a></h4>
+                                <p data-i18n="index.services.card3_desc">Pick and place, depalletizing and palletizing, decasing and encasing, robotic gluing and dispensing, end-of-arm tooling (EOAT) for automated production.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 service-style-one-single">
+                            <div class="service-style-one-item">
+                                <div class="icon">
+                                    <img src="assets/img/icon/4-white.png" alt="Conveyor Systems">
+                                </div>
+                                <h4><a href="services-details.html" data-i18n="index.services.card4_title">Conveyor Systems</a></h4>
+                                <p data-i18n="index.services.card4_desc">Indexed pallet conveyors, chain, belt and band conveyors, carousel conveyors for automated material handling and production line feeding.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 community-card text-light" style="background-image: url(assets/img/shape/1.jpg);">
+                            <h4 data-i18n="index.services.community_title">Electrical Engineering</h4>
+                            <p data-i18n="index.services.community_desc">Design, manufacturing and integration of electrical equipment: cable harnesses, cabinets, control panels for industrial applications.</p>
+                            <div class="info">
+                                <div class="multi-users">
+                                    <img src="assets/img/team/11.jpg" alt="team">
+                                    <img src="assets/img/team/12.jpg" alt="team">
+                                    <img src="assets/img/team/13.jpg" alt="team">
+                                    <img src="assets/img/team/3.jpg" alt="team">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <h5 data-i18n="index.services.team_count">50+ Experts</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements / Process -->
+        <div class="process-style-one-area default-padding-top bg-theme text-light bg-cover" style="background-image: url(assets/img/shape/banner-6.jpg);">
+            <div class="shape">
+                <img src="assets/mts/images/case/mts-automotive.jpg" alt="achievements">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8">
+                        <div class="site-heading">
+                            <h4 class="sub-title" data-i18n="index.achievements.pre">Our Achievements</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.achievements.title">Expert Solutions to Power Your Industrial Growth</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="process-style-one-items">
+                            <div class="process-style-one-item fade-up-anim">
+                                <h2 class="js-counter">5K</h2>
+                                <h4 data-i18n="index.achievements.projects_done">Projects Completed</h4>
+                                <p data-i18n="index.achievements.projects_desc">Successfully delivered automation projects across automotive, electronics, and manufacturing industries in Morocco and internationally.</p>
+                            </div>
+                            <div class="process-style-one-item fade-up-anim">
+                                <h2 class="js-counter">10+</h2>
+                                <h4 data-i18n="index.achievements.experience">Years Experience</h4>
+                                <p data-i18n="index.achievements.experience_desc">Over a decade of industrial automation expertise serving tier-1 automotive suppliers and manufacturing leaders.</p>
+                            </div>
+                            <div class="process-style-one-item fade-up-anim">
+                                <h2 class="js-counter">3</h2>
+                                <h4 data-i18n="index.achievements.sites">Production Sites</h4>
+                                <p data-i18n="index.achievements.sites_desc">Multiple facilities equipped with state-of-the-art technology for machine building, electrical assembly, and system integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects / Case Studies -->
+        <div class="project-style-one-area default-padding bg-gray blurry-shape-half-right-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="fixed-content">
+                            <div class="site-heading">
+                                <h4 class="sub-title" data-i18n="index.solutions.pre">Our Projects</h4>
+                                <h2 class="title split-text-right split-text-in-right" data-i18n="index.solutions.title">Transforming Manufacturing with Automation</h2>
+                            </div>
+                            <div class="project-fun-fact">
+                                <div class="js-counter">5K+</div>
+                                <h4 data-i18n="index.solutions.funfact">Finished creative projects successfully using our automation expertise</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 pl-50 pl-md-15 pl-xs-15">
+                        <div class="project-style-one-items">
+
+                            <div class="project-style-one-item">
+                                <div class="thumb">
+                                    <img src="assets/mts/images/project/01.jpg" alt="Marelli Project">
+                                    <img src="assets/img/shape/4.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="top">
+                                        <h3><a href="project-details.html" data-i18n="index.solutions.case1_title">Automated Assembly Line — Marelli</a></h3>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="#" class="btn-simple" data-i18n="index.solutions.explore">Explore More <i class="fas fa-long-arrow-right"></i></a>
+                                        <ul class="project-tags mt-30">
+                                            <li data-i18n="index.solutions.case1_industry">Automotive</li>
+                                            <li>Assembly</li>
+                                            <li>Automation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-style-one-item">
+                                <div class="thumb">
+                                    <img src="assets/mts/images/project/02.jpg" alt="APTIV Project">
+                                    <img src="assets/img/shape/5.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="top">
+                                        <h3><a href="project-details.html" data-i18n="index.solutions.case2_title">Vision Inspection System — APTIV</a></h3>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="#" class="btn-simple" data-i18n="index.solutions.explore">Explore More <i class="fas fa-long-arrow-right"></i></a>
+                                        <ul class="project-tags mt-30">
+                                            <li data-i18n="index.solutions.case2_industry">Automotive Electronics</li>
+                                            <li>Vision</li>
+                                            <li>Quality</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-style-one-item">
+                                <div class="thumb">
+                                    <img src="assets/mts/images/project/03.jpg" alt="OPmobility Project">
+                                    <img src="assets/img/shape/6.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="top">
+                                        <h3><a href="project-details.html" data-i18n="index.solutions.case3_title">Robotic Palletizing Cell — OPmobility</a></h3>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="#" class="btn-simple" data-i18n="index.solutions.explore">Explore More <i class="fas fa-long-arrow-right"></i></a>
+                                        <ul class="project-tags mt-30">
+                                            <li data-i18n="index.solutions.case3_industry">Automotive</li>
+                                            <li>Robotics</li>
+                                            <li>Palletizing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-style-one-item">
+                                <div class="thumb">
+                                    <img src="assets/mts/images/project/04.jpg" alt="TE Connectivity Project">
+                                    <img src="assets/img/shape/4.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="top">
+                                        <h3><a href="project-details.html" data-i18n="index.solutions.case4_title">Conveyor System — TE Connectivity</a></h3>
+                                    </div>
+                                    <div class="bottom">
+                                        <a href="#" class="btn-simple" data-i18n="index.solutions.explore">Explore More <i class="fas fa-long-arrow-right"></i></a>
+                                        <ul class="project-tags mt-30">
+                                            <li data-i18n="index.solutions.case4_industry">Electronics</li>
+                                            <li>Conveyor</li>
+                                            <li>Material Handling</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div class="team-style-one-area default-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4 class="sub-title" data-i18n="index.team.pre">Our Team</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.team.title">The People Behind Our Success</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="team-style-one-items">
+                            <div class="team-style-one-item wow fadeInUp">
+                                <div class="thumb">
+                                    <img src="assets/img/team/13.jpg" alt="Meriame Elasrri">
+                                    <div class="social-overlay">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                        <div class="icon"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4>Meriame Elasrri</h4>
+                                    <span data-i18n="index.team.member1_role">Technical Sales Manager</span>
+                                </div>
+                            </div>
+                            <div class="team-style-one-item wow fadeInUp" data-wow-delay="100ms">
+                                <div class="thumb">
+                                    <img src="assets/img/team/12.jpg" alt="Abdelhafid Echafi">
+                                    <div class="social-overlay">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                        <div class="icon"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4>Abdelhafid Echafi</h4>
+                                    <span data-i18n="index.team.member2_role">Senior Mechanical Engineering</span>
+                                </div>
+                            </div>
+                            <div class="team-style-one-item wow fadeInUp" data-wow-delay="200ms">
+                                <div class="thumb">
+                                    <img src="assets/img/team/11.jpg" alt="Sofian">
+                                    <div class="social-overlay">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                        <div class="icon"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4>Sofian</h4>
+                                    <span data-i18n="index.team.member3_role">Technicien D'assemblage De machine</span>
+                                </div>
+                            </div>
+                            <div class="team-style-one-item wow fadeInUp" data-wow-delay="300ms">
+                                <div class="thumb">
+                                    <img src="assets/img/team/14.jpg" alt="Oussama Elhassnaoui">
+                                    <div class="social-overlay">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                        <div class="icon"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4>Oussama Elhassnaoui</h4>
+                                    <span data-i18n="index.team.member4_role">Electricien Automaticien</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonial-style-one-area blurry-shape default-padding bg-dark text-light">
+            <div class="container container-stage-lg">
+                <div class="row align-center">
+                    <div class="col-lg-5">
+                        <div class="testimonial-thumb image-scale-animation">
+                            <img class="image-scale-animation-item" src="assets/mts/images/why-choose/01.jpg" alt="Testimonials">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="site-heading">
+                            <h4 class="sub-title" data-i18n="index.testimonials.pre">Testimonials</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.testimonials.title">What Our Clients Say</h2>
+                        </div>
+                        <div class="testimonial-style-one-carousel swiper fade-up-anim">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <div class="quote"><i class="icon-quote"></i></div>
+                                            <div class="info">
+                                                <h4 data-i18n="index.testimonials.t1_name">Jean-Pierre Dubois</h4>
+                                                <div class="icon">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p data-i18n="index.testimonials.t1_text">MTS delivered exceptional electrical cabinet integration for our railway fleet. Their attention to quality and certification standards is outstanding.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <div class="quote"><i class="icon-quote"></i></div>
+                                            <div class="info">
+                                                <h4>Catherine Moreau</h4>
+                                                <div class="icon">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p data-i18n="index.testimonials.t4_text">MTS delivered a complex automated assembly line for our automotive plant, completed on time and exceeding quality expectations.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <div class="quote"><i class="icon-quote"></i></div>
+                                            <div class="info">
+                                                <h4>Philippe Rousseau</h4>
+                                                <div class="icon">
+                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>The robotic integration project was completed on time and exceeded our expectations. MTS is our go-to partner for automation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-one-control">
+                                <div class="testimonial-swiper-pagination"></div>
+                                <div class="testimonial-swiper-nav">
+                                    <div class="testimonial-swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+                                    <div class="testimonial-swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values -->
+        <div class="faq-style-one-area accordion-secondary blurry-shape-right-bottom default-padding bg-gray" style="background-image: url(assets/img/shape/7.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="faq-style-one-info">
+                            <h4 class="sub-title" data-i18n="index.values.pre">Our Values</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.values.title">What Drives Us</h2>
+                            <p data-i18n="index.values.desc">Our principles guide every automation project we deliver.</p>
+                            <div class="check-main-wrapper mt-30">
+                                <div class="single-check mb-10">
+                                    <i class="fa-regular fa-check"></i>
+                                    <p data-i18n="index.values.check1">Quality-driven engineering across all projects</p>
+                                </div>
+                                <div class="single-check mb-10">
+                                    <i class="fa-regular fa-check"></i>
+                                    <p data-i18n="index.values.check2">On-time delivery commitment</p>
+                                </div>
+                                <div class="single-check mb-10">
+                                    <i class="fa-regular fa-check"></i>
+                                    <p data-i18n="index.values.check3">Close client collaboration</p>
+                                </div>
+                            </div>
+                            <a href="about-us.html" class="btn btn-style-one btn-dark mt-20 wow fadeInUp" data-i18n="index.about.learn_more">Learn More About MTS <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 offset-xl-1 col-lg-6">
+                        <div class="accordion-style-one-items fade-up-anim">
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-style-one-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span data-i18n="index.faq.q1">What industries does MTS serve?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p data-i18n="index.faq.a1">MTS primarily serves the automotive industry and its tier-1 suppliers, including manufacturers of connectors, electronics, filtration systems, and wire harnesses. We also serve general manufacturing and industrial sectors.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-style-one-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span data-i18n="index.faq.q2">Where are your facilities located?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>MTS is headquartered in Tanger, Morocco at Z.A.E Bni Ouassine, Lot 58. We serve clients across Morocco and internationally with on-site installation and support capabilities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-style-one-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span data-i18n="index.faq.q3">How can I request a quote?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Contact our team via phone at +212 610 764 921 or email at contact@multitechniques-services.ma. We typically respond within 24 hours with a preliminary assessment and quotation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clients / Brands -->
+        <div class="home-blog-area default-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h4 class="sub-title" data-i18n="index.clients.pre">Our Clients</h4>
+                            <h2 class="title split-text-right split-text-in-right" data-i18n="index.clients.title">Trusted by Automotive & Industrial Leaders</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="brand-logo-swiper-area">
+                            <div class="swiper mySwiper-brand-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/marelli.svg" alt="Marelli"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/aptiv.svg" alt="APTIV"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/te-connectivity.svg" alt="TE Connectivity"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/opmobility.svg" alt="OPmobility"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/sogefi.svg" alt="SOGEFI"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/triumph.svg" alt="Triumph"></div></div>
+                                    <div class="swiper-slide"><div class="single-brand-logo"><img src="assets/mts/images/client-logos/eci.svg" alt="ECI"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-style-one box-layout bg-dark text-light">
+        <div class="footer-shape">
+            <img src="assets/img/shape/globe.png" alt="MTS">
+        </div>
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="f-item contact">
+                            <h4 class="widget-title" data-i18n="footer.contact_title">Contact</h4>
+                            <p>Z.A.E Bni Ouassine, Lot 58<br>Tanger, Morocco</p>
+                            <ul class="contact">
+                                <li>
+                                    <p data-i18n="footer.phone_label">Phone Number</p>
+                                    <h4><a href="tel:+212610764921">+212 610 764 921</a></h4>
+                                </li>
+                                <li>
+                                    <p data-i18n="footer.email_label">Email</p>
+                                    <h4><a href="mailto:contact@multitechniques-services.ma">contact@multitechniques-services.ma</a></h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 offset-xl-1 col-lg-7">
+                        <div class="footer-style-one-items">
+                            <div class="f-item link">
+                                <h4 class="widget-title" data-i18n="footer.company">Company</h4>
+                                <ul>
+                                    <li><a href="about-us.html" data-i18n="footer.about_us">About Us</a></li>
+                                    <li><a href="team.html" data-i18n="footer.our_team">Our Team</a></li>
+                                    <li><a href="services.html" data-i18n="footer.services">Services</a></li>
+                                    <li><a href="contact-us.html" data-i18n="footer.contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="f-item link">
+                                <h4 class="widget-title" data-i18n="footer.services_title">Services</h4>
+                                <ul>
+                                    <li><a href="services-details.html" data-i18n="nav.electrical_equipment">Electrical Engineering</a></li>
+                                    <li><a href="services-details.html" data-i18n="nav.electronic_assemblies">Machine Vision</a></li>
+                                    <li><a href="services-details.html" data-i18n="nav.special_machines_robotics">Special Machines &amp; Robotics</a></li>
+                                    <li><a href="services-details.html" data-i18n="nav.maintenance_repair">Maintenance &amp; Support</a></li>
+                                    <li><a href="services-details.html" data-i18n="nav.equipment_distribution">Conveyor Systems</a></li>
+                                </ul>
+                            </div>
+                            <div class="f-item link">
+                                <h4 class="widget-title" data-i18n="footer.resources">Resources</h4>
+                                <ul>
+                                    <li><a href="about-us.html" data-i18n="footer.certifications">Certifications</a></li>
+                                    <li><a href="contact-us.html" data-i18n="footer.support">Support</a></li>
+                                    <li><a href="about-us.html" data-i18n="nav.why_choose_us">Why Choose Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-one">
+            <div class="container">
+                <div class="content">
+                    <div class="row align-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/mts/images/logo/MTS logo.png" alt="MTS Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="footer-item-social text-end">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; <a href="index.html">MTS</a> <script>document.write(new Date().getFullYear())</script>. <span data-i18n="footer.copyright_rest">All Rights Reserved.</span></p>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul>
+                            <li><a href="about-us.html" data-i18n="nav.about_mts">About MTS</a></li>
+                            <li><a href="team.html" data-i18n="footer.our_team">Our Team</a></li>
+                            <li><a href="services.html" data-i18n="footer.services">Services</a></li>
+                            <li><a href="contact-us.html" data-i18n="footer.contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/validnavs.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <rect width="400" height="120" fill="transparent"/>
+  <g transform="translate(200,55)">
+    <path fill="#003DA5" d="M-165 10 L-165 0 L-132 0 L-132 10 L-154 10 L-154 40 L-132 40 L-132 50 L-165 50 L-165 10Z"/>
+    <path fill="#003DA5" d="M-118 50 L-118 0 L-102 0 L-85 25 L-68 0 L-52 0 L-52 50 L-62 50 L-62 15 L-81 42 L-85 42 L-104 15 L-104 50 L-118 50Z"/>
+    <path fill="#003DA5" d="M-36 50 L-36 0 L-22 0 L-5 40 L12 0 L26 0 L26 50 L16 50 L16 12 L3 42 L-7 42 L-20 12 L-20 50 L-36 50Z"/>
+    <path fill="#003DA5" d="M42 50 L42 0 L72 0 L72 10 L58 10 L58 20 L70 20 L70 30 L58 30 L58 40 L72 40 L72 50 L42 50Z"/>
+    <path fill="#003DA5" d="M86 50 L98 50 L98 10 L115 10 L115 0 L86 0 L86 50Z"/>
+    <path fill="#003DA5" d="M135 50 L135 0 L149 0 L166 40 L183 0 L197 0 L197 50 L187 50 L187 12 L174 42 L164 42 L151 12 L151 50 L135 50Z"/>
+  </g>
+  <rect x="145" y="68" width="110" height="2" fill="#003DA5"/>
+  <text x="200" y="95" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#003DA5" text-anchor="middle" letter-spacing="6">GROUP</text>
+</svg>
